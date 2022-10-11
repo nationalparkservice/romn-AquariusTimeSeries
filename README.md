@@ -11,5 +11,7 @@ Mean values of the raw time step scale are derived for the daily, weekly, monthl
 
 **SitesListExample.xls** Example Excel file define the site/locations, identifier, parameter, unit, utcOffset and lable information used in processing.
 
-**timeseries_client.zip** Zip file with the Aquarius API python scripts requires to rest connect with Aquarius.
-Scripts include the **setup.py** and **timeseries_client.py**
+**timeseries_client.zip** Zip file with the Aquarius API wrapper python scripts required to connect with Aquarius.
+
+Scripts include the **setup.py** and **timeseries_client.py**. 
+- Copy these files into your Python Environment \Lib\site-packages directory.  This will allow the AquariusTimeSeries.py script to be accessiable in this Python Environment.

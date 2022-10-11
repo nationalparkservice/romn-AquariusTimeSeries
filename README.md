@@ -8,3 +8,5 @@ Code is intended to process Rocky Mountain Network Streams, Wetlands and Alpine 
 
 Processing time steps include: Raw date/time (i.e. no summary), daily, weekly, monthly, or yearly.
 Mean values of the raw time step scale are derived for the daily, weekly, monthly and or yearly time steps.
+
+**SitesListExample.xls** Example Excel file define the site/locations, identifier, parameter, unit, utcOffset and lable information used in processing. 

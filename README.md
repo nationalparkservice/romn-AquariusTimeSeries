@@ -9,4 +9,7 @@ Code is intended to process Rocky Mountain Network Streams, Wetlands and Alpine 
 Processing time steps include: Raw date/time (i.e. no summary), daily, weekly, monthly, or yearly.
 Mean values of the raw time step scale are derived for the daily, weekly, monthly and or yearly time steps.
 
-**SitesListExample.xls** Example Excel file define the site/locations, identifier, parameter, unit, utcOffset and lable information used in processing. 
+**SitesListExample.xls** Example Excel file define the site/locations, identifier, parameter, unit, utcOffset and lable information used in processing.
+
+**timeseries_client.zip** Zip file with the Aquarius API python scripts requires to rest connect with Aquarius.
+Scripts include the **setup.py** and **timeseries_client.py**

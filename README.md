@@ -14,7 +14,9 @@ Mean values of the raw time step scale are derived for the daily, weekly, monthl
 **timeseries_client.zip** Zip file with the Aquarius API wrapper python scripts required to connect with Aquarius.
 
 Files in zip include the **setup.py** and **timeseries_client.py**. 
-- Copy these files into your Python Environment \Lib\site-packages directory.  This will allow the AquariusTimeSeries.py script to be accessiable in the Python Environment.
+- Copy these files into your Python Environment '\Lib\site-packages' directory.  This will allow the AquariusTimeSeries.py script to be accessiable in the Python Environment.
+
+**pyrfc3339.zip** Zip file with sciprts used with the Aquarius API.  The 'pyrfc3339' folder and files need to be installed in your Python Environment '\Lib\site-packages' directory.
 
 ## Append_DTW_TimeSeries.py
 Script appends continuous time series data to defined sites in Aquarius using the Aquarius API timeseries.acquistion.post function, see https://aquarius.nps.gov/AQUARIUS/Acquisition/v2/docs/reference.html. The continuous data in a .csv file is appended to the defined time series(s) in the timeSeriesLoop' parameter.  Processing logic harvests all .csv files in the downstream directories of the input root directory. CSV files being processed must have the site name prefix which is used to define the location in Aquarius at which the time series data will be uploaded to (e.g. FLFO_705_FLFO_705_2020_1_Hourly_20220412.csv where {SiteName_EventName_OutputScale_DateofOutput_.csv}).

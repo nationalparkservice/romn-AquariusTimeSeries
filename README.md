@@ -21,7 +21,12 @@ Files in zip include the **setup.py** and **timeseries_client.py**.
 ## Append_DTW_TimeSeries.py
 Script appends continuous time series data to defined sites in Aquarius using the Aquarius API timeseries.acquistion.post function, see https://aquarius.nps.gov/AQUARIUS/Acquisition/v2/docs/reference.html. The continuous data in a .csv file is appended to the defined time series(s) in the timeSeriesLoop' parameter.  Processing logic harvests all .csv files in the downstream directories of the input root directory. CSV files being processed must have the site name prefix which is used to define the location in Aquarius at which the time series data will be uploaded to (e.g. FLFO_705_FLFO_705_2020_1_Hourly_20220412.csv where {SiteName_EventName_OutputScale_DateofOutput_.csv}).
 
-Script is defined to specifically process the following ROMN centric time series:
+Script is defined to process the following ROMN centric time series:
 Code is defined to process the following ROMN specific time series:
-DepthToWaterFromGround.DTW_g_Adjusted, Absolute Pressure.Pressure_Baromerged, Absolute Pressure.Pressure_Raw, Groundwater Temp at Depth.Groundwater Temp at Depth 0-200 cm, Absolute Pressure.Pressure_Baro
+DepthToWaterFromGround.DTW_g_Adjusted, Absolute Pressure.Pressure_Baromerged, Absolute Pressure.Pressure_Raw, Groundwater Temp at Depth.Groundwater Temp at Depth 0-200 cm, Absolute Pressure.Pressure_Baro.
 
+## AppendWeatherStation_TimeSeries.py
+Script performs the same function as the 'Append_DTW_TimeSeries.py' script however it is used to upload weather station data to weather/climate time series in Aquarius. Weather Station data being uploaded is harvested using the NPS-IMD Envinronmental Settings Protocol toolkit see - https://github.com/nationalparkservice/EnvironmentalSetting_Toolkit.
+
+Script is defined to process the following time series:
+Precip Total.Precipitation (cm), Snow Depth.Snow Depth (cm), Air Temp.Average Daily Temperature (C), Air Temp.Maximum Daily Temperature (C), Air Temp.Minimum Daily Temperature (C).
